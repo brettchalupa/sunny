@@ -20,12 +20,28 @@ Currently targeted Playdate SDK version: 3.0.
 - Nice Zed editor config
 - Optimized for macOS (but works on other operating system)
 
+## Template License
+
+All of the code and assets in this template is released into the public domain,
+unless otherwise noted. Pick your own license for your game once you make it.
+
+## Use the Template
+
+Delete everything above, update `YOURGAME` accordingly throughout the source,
+and make a great game.
+
+---
+
+# YOURGAME
+
 ## Prerequisites
 
+- [Playdate SDK](https://play.date/dev/)
 - [git](https://git-scm.com/)
 - [just](https://just.systems/)
 
-On macOS you can install all prerequisites via [Homebrew](https://brew.sh/) by running:
+On macOS you can install all prerequisites via [Homebrew](https://brew.sh/) by
+running:
 
 ```
 brew bundle
@@ -39,13 +55,8 @@ After cloning, initialize the vendored submodules by running:
 just setup
 ```
 
-## Template License
+## Reference
 
-## Use the Template
-
-Delete everything above, update `YOURGAME` accordingly throughout the source,
-and make a great game.
-
----
-
-# YOURGAME
+- [Playdate SDK docs](https://sdk.play.date)
+- [Designing for Playdate](https://help.play.date/developer/designing-for-playdate/) -
+  best practices guide

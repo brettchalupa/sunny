@@ -1,7 +1,5 @@
 local gfx <const> = playdate.graphics
 local md <const> = playdate.metadata
-local DISPLAY_HEIGHT <const> = playdate.display.getHeight()
-local DISPLAY_WIDTH <const> = playdate.display.getWidth()
 
 local function update()
   if playdate.buttonJustPressed(playdate.kButtonA) then

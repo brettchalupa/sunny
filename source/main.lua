@@ -1,7 +1,7 @@
 local gfx <const> = playdate.graphics
 
 FONT_ASHEVILLE_14 = playdate.graphics.font.new("/System/Fonts/Asheville-Sans-14-Bold.pft")
-gfx.setFont(FONT_ASHEVILLE_14)
+FPS = 30
 
 SCENE = {
   MAIN_MENU = "mainMenu",
@@ -24,6 +24,12 @@ function SwitchScene(key)
   pendingScene = scenes[key]
 end
 
+-- Called once when the game starts
+local function init()
+  playdate.display.setRefreshRate(FPS)
+  gfx.setFont(FONT_ASHEVILLE_14)
+end
+
 ---@diagnostic disable-next-line: duplicate-set-field
 function playdate.update()
   if pendingScene then
@@ -33,3 +39,5 @@ function playdate.update()
 
   currentScene.update()
 end
+
+init()

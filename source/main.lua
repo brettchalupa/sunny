@@ -7,9 +7,9 @@ DISPLAY_WIDTH = playdate.display.getWidth()
 FPS = 30 -- change this to whatever target framerate you want; Playdate max FPS is 50
 
 SCENE = {
-  MAIN_MENU = "mainMenu",
-  CREDITS = "credits",
-  GAMEPLAY = "gameplay",
+  MAIN_MENU = 1,
+  CREDITS = 2,
+  GAMEPLAY = 3,
 }
 
 local scenes = {

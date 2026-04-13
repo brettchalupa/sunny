@@ -37,6 +37,9 @@ end
 
 ---@diagnostic disable-next-line: duplicate-set-field
 function playdate.update()
+  local dt = playdate.getElapsedTime()
+  playdate.resetElapsedTime()
+
   -- Set default font to prevent lingering setting from last frame
   SetFont(Fonts.default)
 
@@ -45,7 +48,7 @@ function playdate.update()
     pendingScene = nil
   end
 
-  currentScene.update()
+  currentScene.update(dt)
 
   if IS_DEBUG then
     playdate.drawFPS(DISPLAY_WIDTH - 18, 4)

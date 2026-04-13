@@ -6,7 +6,7 @@ local VERSION_TEXT_WIDTH = Fonts.asheville14Bold:getTextWidth(version)
 local ASHEVILLE14_HEIGHT = Fonts.asheville14Bold:getHeight()
 local MARGIN = 10
 
-local function update()
+local function update(_dt)
   if playdate.buttonJustPressed(playdate.kButtonA) then
     SwitchScene(SCENE.GAMEPLAY)
   end

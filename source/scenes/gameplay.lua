@@ -3,23 +3,23 @@ local gfx <const> = playdate.graphics
 local player = {
   x = 10,
   y = 10,
-  w = 16, -- width
-  h = 16, -- height
-  s = 4,  -- speed
+  w = 16,  -- width
+  h = 16,  -- height
+  s = 200, -- speed in px/s
 }
 
-local function update()
+local function update(dt)
   if playdate.buttonIsPressed(playdate.kButtonLeft) then
-    player.x -= player.s
+    player.x -= player.s * dt
   end
   if playdate.buttonIsPressed(playdate.kButtonRight) then
-    player.x += player.s
+    player.x += player.s * dt
   end
   if playdate.buttonIsPressed(playdate.kButtonUp) then
-    player.y -= player.s
+    player.y -= player.s * dt
   end
   if playdate.buttonIsPressed(playdate.kButtonDown) then
-    player.y += player.s
+    player.y += player.s * dt
   end
 
   if playdate.buttonJustPressed(playdate.kButtonB) then

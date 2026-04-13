@@ -1,7 +1,7 @@
 local gfx <const> = playdate.graphics
 local md <const> = playdate.metadata
 
-local function update()
+local function update(_dt)
   if playdate.buttonJustPressed(playdate.kButtonB) then
     SwitchScene(SCENE.MAIN_MENU)
   end

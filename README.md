@@ -1,4 +1,4 @@
-# Sunny 🌞 - Playdate Lua Template
+# Sunny ☀️ - Playdate Lua Template
 
 Hit the ground running with this game dev template for Playdate + Lua made by
 Brett Chalupa (a.k.a. Brett Makes Games).

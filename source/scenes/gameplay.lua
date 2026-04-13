@@ -22,6 +22,10 @@ local function update()
     player.y += player.s
   end
 
+  if playdate.buttonJustPressed(playdate.kButtonB) then
+    SwitchScene(SCENE.MAIN_MENU)
+  end
+
   gfx.clear()
   gfx.fillRect(player.x, player.y, player.w, player.h)
 end

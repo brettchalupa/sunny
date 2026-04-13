@@ -1,6 +1,7 @@
+import("fonts")
+
 local gfx <const> = playdate.graphics
 
-FONT_ASHEVILLE_14 = playdate.graphics.font.new("/System/Fonts/Asheville-Sans-14-Bold.pft")
 FPS = 30 -- change this to whatever target framerate you want; Playdate max FPS is 50
 
 SCENE = {
@@ -27,11 +28,13 @@ end
 -- Called once when the game starts
 local function init()
   playdate.display.setRefreshRate(FPS)
-  gfx.setFont(FONT_ASHEVILLE_14)
 end
 
 ---@diagnostic disable-next-line: duplicate-set-field
 function playdate.update()
+  -- Set default font to prevent lingering setting from last frame
+  SetFont(Fonts.default)
+
   if pendingScene then
     currentScene = pendingScene
     pendingScene = nil

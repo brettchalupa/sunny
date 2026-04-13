@@ -13,7 +13,11 @@ local function update()
   end
 
   gfx.clear()
+
+  SetFont(Fonts.asheville24Light)
   gfx.drawText(md.name, 10, 10)
+
+  SetFont(Fonts.default)
   gfx.drawText(md.author, 10, DISPLAY_HEIGHT - 24)
   gfx.drawText(md.version, DISPLAY_WIDTH - 62, DISPLAY_HEIGHT - 24)
 end

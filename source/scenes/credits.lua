@@ -7,8 +7,12 @@ local function update()
   end
 
   gfx.clear()
+
+  SetFont(Fonts.asheville24Light)
   gfx.drawText("CREDITS", 10, 10)
-  gfx.drawText("Made by " .. md.author, 10, 44)
+
+  SetFont(Fonts.default)
+  gfx.drawText("Made by " .. md.author, 10, 50)
 end
 
 local scene = {

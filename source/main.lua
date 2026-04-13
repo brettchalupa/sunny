@@ -1,8 +1,5 @@
 import("fonts")
 
-local gfx <const> = playdate.graphics
-local md <const> = playdate.metadata
-
 -- gets set to `true` when the pdxinfo version has the `-dev` suffix
 IS_DEBUG = string.find(playdate.metadata.version, "-dev") ~= nil
 DISPLAY_HEIGHT = playdate.display.getHeight()

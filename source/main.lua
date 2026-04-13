@@ -1,7 +1,7 @@
 local gfx <const> = playdate.graphics
 
 FONT_ASHEVILLE_14 = playdate.graphics.font.new("/System/Fonts/Asheville-Sans-14-Bold.pft")
-FPS = 30
+FPS = 30 -- change this to whatever target framerate you want; Playdate max FPS is 50
 
 SCENE = {
   MAIN_MENU = "mainMenu",

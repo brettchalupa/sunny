@@ -1,4 +1,5 @@
 local gfx <const> = playdate.graphics
+local md <const> = playdate.metadata
 
 local function update()
   if playdate.buttonJustPressed(playdate.kButtonB) then
@@ -7,6 +8,7 @@ local function update()
 
   gfx.clear()
   gfx.drawText("CREDITS", 10, 10)
+  gfx.drawText("Made by " .. md.author, 10, 44)
 end
 
 local scene = {

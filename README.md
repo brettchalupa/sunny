@@ -11,7 +11,7 @@ Currently targeted Playdate SDK version: 3.0.
 - Save data with playtime tracking
 - Lua language formatting and server protocol support
 - `just` commands
-- Ruby script to build and release to itch.io
+- itch.io release script: `just release`
 - 2 space indentation, soft tabs
 - Nice Zed editor config
 - Optimized for macOS (but works on other operating system)
@@ -38,6 +38,8 @@ and make a great game.
 - [Playdate SDK](https://play.date/dev/)
 - [git](https://git-scm.com/)
 - [just](https://just.systems/)
+- Ruby
+- [itch.io butler](https://itch.io/docs/butler/) - if you want to release on itch.io
 
 On macOS you can install all prerequisites via [Homebrew](https://brew.sh/) by
 running:

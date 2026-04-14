@@ -21,6 +21,9 @@ Currently targeted Playdate SDK version: 3.0.
 All of the code and assets in this template is released into the public domain,
 unless otherwise noted. Pick your own license for your game once you make it.
 
+Asheville font by Panic, licensed for use under the
+[Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).
+
 ## Use the Template
 
 Delete everything above, update `YOURGAME` accordingly throughout the source,

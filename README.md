@@ -7,8 +7,9 @@ Currently targeted Playdate SDK version: 3.0.
 
 ## Features / Bugs
 
-- Essential scenes: main menu, gameplay, settings, credits
+- Essential scenes: main menu, gameplay, credits
 - Save data with playtime tracking
+- Sound effect with setting toggle in Playdate menu
 - Lua language formatting and server protocol support
 - `just` commands
 - itch.io release script: `just release`

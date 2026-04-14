@@ -1,5 +1,6 @@
 import("fonts")
 import("save_data")
+import("settings")
 import("sound")
 
 -- gets set to `true` when the pdxinfo version has the `-dev` suffix
@@ -33,11 +34,15 @@ end
 local function init()
   playdate.display.setRefreshRate(FPS)
 
+  LoadSettings()
   LoadSaveData()
 
   local menu = playdate.getSystemMenu()
   menu:addMenuItem("main menu", function()
     SwitchScene(SCENE.MAIN_MENU)
+  end)
+  menu:addCheckmarkMenuItem("play sfx", Settings.playSFX, function(value)
+    UpdateSetting(SETTING.PLAY_SFX, value)
   end)
 end
 

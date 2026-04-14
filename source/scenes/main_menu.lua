@@ -49,7 +49,7 @@ local function update(_dt)
   gfx.drawText(md.name, MARGIN, MARGIN)
 
   SetFont(Fonts.default)
-  gfx.drawText(md.author, 10, DISPLAY_HEIGHT - ASHEVILLE14_HEIGHT - MARGIN)
+  gfx.drawText("by " .. md.author, 10, DISPLAY_HEIGHT - ASHEVILLE14_HEIGHT - MARGIN)
   gfx.drawText(version, DISPLAY_WIDTH - VERSION_TEXT_WIDTH - MARGIN, DISPLAY_HEIGHT - ASHEVILLE14_HEIGHT - MARGIN)
 
   local menuStartY = 80

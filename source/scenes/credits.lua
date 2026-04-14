@@ -3,6 +3,7 @@ local md <const> = playdate.metadata
 
 local function update(_dt)
   if playdate.buttonJustPressed(playdate.kButtonB) then
+    PlaySFX("B3")
     SwitchScene(SCENE.MAIN_MENU)
   end
 

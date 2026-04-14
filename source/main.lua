@@ -1,5 +1,6 @@
 import("fonts")
 import("save_data")
+import("sound")
 
 -- gets set to `true` when the pdxinfo version has the `-dev` suffix
 IS_DEBUG = string.find(playdate.metadata.version, "-dev") ~= nil

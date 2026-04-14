@@ -18,6 +18,7 @@ local currentOption = 1
 
 local function update(_dt)
   if playdate.buttonJustPressed(playdate.kButtonUp) then
+    PlaySFX("B4")
     currentOption -= 1
     if currentOption <= 0 then
       currentOption = #options
@@ -25,6 +26,7 @@ local function update(_dt)
   end
 
   if playdate.buttonJustPressed(playdate.kButtonDown) then
+    PlaySFX("C4")
     currentOption += 1
     if currentOption > #options then
       currentOption = 1
@@ -32,7 +34,7 @@ local function update(_dt)
   end
 
   if playdate.buttonJustPressed(playdate.kButtonA) then
-    -- TODO(sfx)
+    PlaySFX("A3")
 
     if currentOption == OPTION.PLAY then
       SwitchScene(SCENE.GAMEPLAY)

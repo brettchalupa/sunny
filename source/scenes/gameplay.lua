@@ -25,6 +25,7 @@ local function update(dt)
   end
 
   if playdate.buttonJustPressed(playdate.kButtonB) then
+    PlaySFX("B3")
     SwitchScene(SCENE.MAIN_MENU)
   end
 

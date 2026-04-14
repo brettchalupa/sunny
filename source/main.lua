@@ -34,6 +34,11 @@ local function init()
   playdate.display.setRefreshRate(FPS)
 
   LoadSaveData()
+
+  local menu = playdate.getSystemMenu()
+  menu:addMenuItem("main menu", function()
+    SwitchScene(SCENE.MAIN_MENU)
+  end)
 end
 
 ---@diagnostic disable-next-line: duplicate-set-field

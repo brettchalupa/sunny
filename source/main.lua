@@ -1,10 +1,12 @@
 import("fonts")
+import("save_data")
 
 -- gets set to `true` when the pdxinfo version has the `-dev` suffix
 IS_DEBUG = string.find(playdate.metadata.version, "-dev") ~= nil
 DISPLAY_HEIGHT = playdate.display.getHeight()
 DISPLAY_WIDTH = playdate.display.getWidth()
-FPS = 30 -- change this to whatever target framerate you want; Playdate max FPS is 50
+
+local FPS <const> = 30 -- change this to whatever target framerate you want; Playdate max FPS is 50
 
 SCENE = {
   MAIN_MENU = 1,
@@ -19,7 +21,6 @@ local scenes = {
 }
 
 local currentScene = scenes[SCENE.MAIN_MENU]
-
 local pendingScene = nil
 
 -- Switch the active scene to the specified key from `SCENE`
@@ -30,6 +31,8 @@ end
 -- Called once when the game starts
 local function init()
   playdate.display.setRefreshRate(FPS)
+
+  LoadSaveData()
 end
 
 ---@diagnostic disable-next-line: duplicate-set-field
@@ -50,6 +53,16 @@ function playdate.update()
   if IS_DEBUG then
     playdate.drawFPS(DISPLAY_WIDTH - 18, 4)
   end
+end
+
+---@diagnostic disable-next-line: duplicate-set-field
+function playdate.gameWillTerminate()
+  SaveSaveData()
+end
+
+---@diagnostic disable-next-line: duplicate-set-field
+function playdate.deviceWillSleep()
+  SaveSaveData()
 end
 
 init()

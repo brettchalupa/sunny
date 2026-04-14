@@ -9,6 +9,8 @@ local player = {
 }
 
 local function update(dt)
+  SaveData.playtime += dt
+
   if playdate.buttonIsPressed(playdate.kButtonLeft) then
     player.x -= player.s * dt
   end

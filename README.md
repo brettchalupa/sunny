@@ -8,14 +8,10 @@ Currently targeted Playdate SDK version: 3.0.
 ## Features / Bugs
 
 - Essential scenes: main menu, gameplay, settings, credits
-- Sprites
-- Fonts
-- Sound effects
-- Language formatting and server protocol support
+- Save data with playtime tracking
+- Lua language formatting and server protocol support
 - `just` commands
 - Ruby script to build and release to itch.io
-- Devtools written in Lua + Love2D
-- Simple text layout utilities
 - 2 space indentation, soft tabs
 - Nice Zed editor config
 - Optimized for macOS (but works on other operating system)

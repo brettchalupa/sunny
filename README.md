@@ -11,13 +11,14 @@ Curious about Playdate game dev?
 ## Features / Bugs
 
 - Essential scenes: main menu, gameplay, credits
-- Save data with playtime tracking
+- Save data with play time tracking
 - Sound effect with setting toggle in Playdate menu
 - Lua language formatting and server protocol support
+- `IS_DEBUG` boolean and versioning convention
 - `just` commands
 - itch.io release script: `just release`
 - 2 space indentation, soft tabs
-- Nice Zed editor config
+- Zed editor config
 - Optimized for macOS (but works on other operating system)
 
 ## Template License
@@ -37,7 +38,9 @@ and make a great game.
 
 # YOURGAME
 
-## Prerequisites
+## Developing
+
+### Prerequisites
 
 - [Playdate SDK](https://play.date/dev/)
 - [git](https://git-scm.com/)
@@ -46,14 +49,14 @@ and make a great game.
 - [itch.io butler](https://itch.io/docs/butler/) - if you want to release on
   itch.io
 
-On macOS you can install all prerequisites via [Homebrew](https://brew.sh/) by
-running:
+On macOS and Linux you can install all prerequisites via
+[Homebrew](https://brew.sh/) by running:
 
 ```
 brew bundle
 ```
 
-## Setup
+### Setup
 
 After cloning, initialize the vendored submodules by running:
 
@@ -61,7 +64,7 @@ After cloning, initialize the vendored submodules by running:
 just setup
 ```
 
-## Reference
+### Reference
 
 - [Playdate SDK docs](https://sdk.play.date)
 - [Designing for Playdate](https://help.play.date/developer/designing-for-playdate/) -

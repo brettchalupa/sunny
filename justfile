@@ -1,19 +1,25 @@
 bin := "YOURGAME.pdx"
 
+# Open finder selector
 default:
-    @just choose
+    @just --choose
 
+# Initializes the git submodule for luacats
 setup:
     git submodule update --init --recursive
 
+# Build the game with the Playdate compiler (pdc)
 build:
     pdc source {{ bin }}
 
+# Build and run the game by opening it in the Playdate Simulator; only works for macOS currently
 run: build
     open {{ bin }}
 
+# Remove the pdx from disk
 clean:
     rm -rf {{ bin }}
 
+# Run the release script, pushing to itch.io
 release:
     ruby release.rb

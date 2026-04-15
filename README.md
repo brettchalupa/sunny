@@ -23,8 +23,9 @@ Curious about Playdate game dev?
 
 ## Template License
 
-All of the code and assets in this template is released into the public domain,
-unless otherwise noted. Pick your own license for your game once you make it.
+All of the code and assets in the Sunny template is released into the public
+domain, unless otherwise noted. Pick your own license for your game once you
+make it.
 
 Asheville font by Panic, licensed for use under the
 [Creative Commons Attribution 4.0 International (CC BY 4.0) license](https://creativecommons.org/licenses/by/4.0/).

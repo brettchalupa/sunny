@@ -120,3 +120,9 @@ The version that's set in itch.io gets pulled from `source/pdxinfo`.
 
 If you want to release your game somewhere else, just revise `release.rb`
 accordingly.
+
+## License
+
+All of the code and assets in the Sunny template is released into the public
+domain, unless otherwise noted. Pick your own license for your game once you
+make it.

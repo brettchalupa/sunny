@@ -5,6 +5,9 @@ Brett Chalupa (a.k.a. Brett Makes Games).
 
 Currently targeted Playdate SDK version: 3.0.
 
+Curious about Playdate game dev?
+[Check out my book: _Make Games for Playdate with Lua_!](https://leanpub.com/playdatebook)
+
 ## Features / Bugs
 
 - Essential scenes: main menu, gameplay, credits
@@ -40,7 +43,8 @@ and make a great game.
 - [git](https://git-scm.com/)
 - [just](https://just.systems/)
 - Ruby
-- [itch.io butler](https://itch.io/docs/butler/) - if you want to release on itch.io
+- [itch.io butler](https://itch.io/docs/butler/) - if you want to release on
+  itch.io
 
 On macOS you can install all prerequisites via [Homebrew](https://brew.sh/) by
 running:

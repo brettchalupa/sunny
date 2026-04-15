@@ -97,6 +97,18 @@ game start and automatically saved before the game is closed. See
 
 There's a global `SaveData` you can access to modify your data as needed.
 
+You can save your save data by calling:
+
+```lua
+SaveSaveData()
+```
+
+And load it with:
+
+```lua
+LoadSaveData()
+```
+
 ## Release
 
 When it comes time to release your game, you can `just release` to push to itch.

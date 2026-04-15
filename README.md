@@ -1,7 +1,7 @@
 # Sunny ☀️ - Playdate Lua Template
 
-Hit the ground running with this game dev template for Playdate + Lua made by
-Brett Chalupa (a.k.a. Brett Makes Games).
+Hit the ground running with this opionated game dev template for Playdate + Lua
+made by Brett Chalupa (a.k.a. Brett Makes Games).
 
 Currently targeted Playdate SDK version: 3.0.
 
@@ -10,9 +10,11 @@ Curious about Playdate game dev?
 
 ## Features / Bugs
 
+- Simple and data driven
+- Some globals, but not too many
 - Essential scenes: main menu, gameplay, credits
-- Save data with play time tracking
-- Sound effect with setting toggle in Playdate menu
+- Save data with play time tracking - `SaveData` table
+- Sound effect synth with setting toggle in Playdate menu - `PlaySFX("A4")`
 - Lua language formatting and server protocol support
 - `IS_DEBUG` boolean and versioning convention
 - `just` commands

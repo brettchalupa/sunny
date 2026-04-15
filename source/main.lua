@@ -27,6 +27,10 @@ local pendingScene = nil
 
 -- Switch the active scene to the specified key from `SCENE`
 function SwitchScene(key)
+  if currentScene.close then
+    currentScene.close()
+  end
+
   pendingScene = scenes[key]
 end
 
@@ -44,6 +48,10 @@ local function init()
   menu:addCheckmarkMenuItem("play sfx", Settings.playSFX, function(value)
     UpdateSetting(SETTING.PLAY_SFX, value)
   end)
+
+  if currentScene.init then
+    currentScene.init()
+  end
 end
 
 ---@diagnostic disable-next-line: duplicate-set-field
@@ -56,6 +64,9 @@ function playdate.update()
 
   if pendingScene then
     currentScene = pendingScene
+    if currentScene.init then
+      currentScene.init()
+    end
     pendingScene = nil
   end
 

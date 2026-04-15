@@ -64,8 +64,18 @@ local function update(_dt)
   end
 end
 
+local function init()
+  print("Main Menu initialized!")
+end
+
+local function close()
+  print("Main Menu closed!")
+end
+
 local scene = {
   update = update,
+  close = close,
+  init = init,
 }
 
 return scene

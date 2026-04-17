@@ -12,9 +12,14 @@ setup:
 build:
     pdc source {{ bin }}
 
-# Build and run the game by opening it in the Playdate Simulator; only works for macOS currently
+# Build and run the game by opening it in the Playdate Simulator
 run: build
-    open {{ bin }}
+    #!/usr/bin/env sh
+    if [ "$(uname)" == "Darwin" ]; then
+        open {{ bin }}
+    else
+        $PLAYDATE_SDK_PATH/bin/PlaydateSimulator {{ bin }}
+    fi
 
 # Remove the pdx from disk
 clean:

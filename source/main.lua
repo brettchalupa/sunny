@@ -54,8 +54,15 @@ local function init()
   end
 end
 
+local didInit = false
+
 ---@diagnostic disable-next-line: duplicate-set-field
 function playdate.update()
+  if didInit == false then
+    init()
+    didInit = true
+  end
+
   local dt = playdate.getElapsedTime()
   playdate.resetElapsedTime()
 
@@ -86,5 +93,3 @@ end
 function playdate.deviceWillSleep()
   SaveSaveData()
 end
-
-init()

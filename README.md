@@ -21,7 +21,7 @@ Curious about Playdate game dev?
 - itch.io release script: `just release`
 - 2 space indentation, soft tabs
 - Zed editor config
-- Optimized for macOS (but works on other operating system)
+- Optimized for Linux and macOS (but should work well on Windows)
 
 ## Template License
 

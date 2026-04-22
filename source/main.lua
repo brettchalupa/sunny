@@ -38,6 +38,9 @@ end
 local function init()
   playdate.display.setRefreshRate(FPS)
 
+  -- seed the random number generator
+  math.randomseed(playdate.getSecondsSinceEpoch())
+
   LoadSettings()
   LoadSaveData()
 

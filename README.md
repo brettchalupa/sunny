@@ -6,7 +6,7 @@ made by Brett Chalupa (a.k.a. Brett Makes Games).
 Currently targeted Playdate SDK version: 3.0.
 
 Curious about Playdate game dev?
-[Check out my book: _Make Games for Playdate with Lua_!](https://leanpub.com/playdatebook)
+[Check out my book: _Make Games for Playdate with Lua_!](https://pdbook.net)
 
 ## Features / Bugs
 
